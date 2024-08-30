@@ -26,8 +26,10 @@ jobs:
       - name: Verify Build Directory
         run: |
           if [ ! -d "build/web" ]; then
-            echo "Build directory does not exist. Exiting."
+            echo "Error: Build directory 'build/web' does not exist."
             exit 1
+          else
+            echo "Build directory exists, proceeding..."
           fi
       
       - name: Deploy to GitHub Pages
@@ -42,5 +44,4 @@ jobs:
           git add .
           git commit -m "Deploy to GitHub Pages"
           git push -f origin gh-pages
-      
       
