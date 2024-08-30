@@ -12,12 +12,14 @@ flutter clean
 # Get dependencies
 flutter pub get
 
-# Build the web app
-flutter build web
+# Build the web app with the correct base href
+flutter build web --base-href "/First-Flutter-Dashboard/"
 
 # Ensure the build directory exists
 if [ -d "build/web" ]; then
     echo "Build directory exists, proceeding with deployment..."
+
+    echo 'https://kkayaiirem.github.io/First-Flutter-Dashboard' > build/web/CNAME
 
     # Navigate to the build directory
     cd build/web || exit
@@ -35,7 +37,7 @@ if [ -d "build/web" ]; then
     git remote add origin https://github.com/kkayaiirem/First-Flutter-Dashboard.git
 
     # Force push the files to the gh-pages branch
-    git push -f origin master:gh-pages
+    git push -f origin main:gh-pages
 
     # Navigate back to the project root
     cd ../..
