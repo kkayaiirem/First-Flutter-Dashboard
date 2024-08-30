@@ -1,12 +1,6 @@
 const { exec } = require('child_process');
-const path = require('path');
 
-console.log('Current working directory:', process.cwd());
-
-// Use the full path for the git binary
-const gitPath = '/opt/homebrew/bin/git';
-
-const command = `gh-pages -d build/web --git ${gitPath}`;
+const command = `gh-pages -d build/web`;
 const options = {
   env: {
     ...process.env,
