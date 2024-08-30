@@ -674,34 +674,44 @@ class MyApp extends StatelessWidget {
                                     ],
                                   ),
                                   SizedBox(height: 16),
-                                  _buildActivityRow(
-                                      Icons.check_box,
-                                      'Checked customer satisfaction with purchase',
-                                      'Just now'),
-                                  _buildActivityRow(
-                                      Icons.update,
-                                      'Offer #0178348 status changed to Processing, Mini Cooper S not yet picked up',
-                                      'Apr 10, 2024 at 09:30'),
-                                  _buildActivityRow(
-                                      Icons.attach_money,
-                                      'Finalized financing details',
-                                      'Apr 5, 2024 at 13:45'),
-                                  _buildActivityRow(
-                                      Icons.email,
-                                      'Follow-up email regarding pending offer',
-                                      'Mar 28, 2024 at 15:00'),
-                                  _buildActivityRow(
-                                      Icons.swap_horiz,
-                                      'Discussed trade-in options',
-                                      'Mar 25, 2024 at 12:45'),
-                                  _buildActivityRow(
-                                      Icons.send,
-                                      'Sent offer details for review',
-                                      'Mar 20, 2024 at 09:15'),
-                                  _buildActivityRow(
-                                      Icons.update,
-                                      'Offer #0178348 status changed to Pending, presented Mini Cooper offer',
-                                      'Mar 18, 2024 at 11:00'),
+                                  Expanded(
+                                    child: SingleChildScrollView(
+                                      child: Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          _buildActivityRow(
+                                              Icons.check_box,
+                                              'Checked customer satisfaction with purchase',
+                                              'Just now'),
+                                          _buildActivityRow(
+                                              Icons.update,
+                                              'Offer #0178348 status changed to Processing, Mini Cooper S not yet picked up',
+                                              'Apr 10, 2024 at 09:30'),
+                                          _buildActivityRow(
+                                              Icons.attach_money,
+                                              'Finalized financing details',
+                                              'Apr 5, 2024 at 13:45'),
+                                          _buildActivityRow(
+                                              Icons.email,
+                                              'Follow-up email regarding pending offer',
+                                              'Mar 28, 2024 at 15:00'),
+                                          _buildActivityRow(
+                                              Icons.swap_horiz,
+                                              'Discussed trade-in options',
+                                              'Mar 25, 2024 at 12:45'),
+                                          _buildActivityRow(
+                                              Icons.send,
+                                              'Sent offer details for review',
+                                              'Mar 20, 2024 at 09:15'),
+                                          _buildActivityRow(
+                                              Icons.update,
+                                              'Offer #0178348 status changed to Pending, presented Mini Cooper offer',
+                                              'Mar 18, 2024 at 11:00'),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),
