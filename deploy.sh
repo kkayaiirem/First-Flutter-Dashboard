@@ -19,9 +19,6 @@ flutter build web
 if [ -d "build/web" ]; then
     echo "Build directory exists, proceeding with deployment..."
 
-    # Create CNAME file
-    echo 'examai.ai' > build/web/CNAME
-
     # Navigate to the build directory
     cd build/web || exit
 
@@ -38,7 +35,7 @@ if [ -d "build/web" ]; then
     git remote add origin https://github.com/kkayaiirem/First-Flutter-Dashboard.git
 
     # Force push the files to the gh-pages branch
-    git push -f origin gh-pages
+    git push -f origin master:gh-pages
 
     # Navigate back to the project root
     cd ../..
