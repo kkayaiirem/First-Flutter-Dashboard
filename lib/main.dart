@@ -607,101 +607,103 @@ class MyApp extends StatelessWidget {
                           color: Colors.white,
                           child: Padding(
                             padding: const EdgeInsets.all(16.0),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: <Widget>[
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('Add Notes',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                            child: SingleChildScrollView(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: <Widget>[
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('Add Notes',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('Follow Up',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('Follow Up',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('Mail',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('Mail',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('New Offer',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('New Offer',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('SMS',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('SMS',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('Activity History',
-                                            style: TextStyle(
-                                                color: Colors.purple)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('Activity History',
+                                              style: TextStyle(
+                                                  color: Colors.purple)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                    Expanded(
-                                      child: TextButton(
-                                        child: Text('Files (0)',
-                                            style:
-                                                TextStyle(color: Colors.grey)),
-                                        onPressed: () {},
+                                      Expanded(
+                                        child: TextButton(
+                                          child: Text('Files (0)',
+                                              style: TextStyle(
+                                                  color: Colors.grey)),
+                                          onPressed: () {},
+                                        ),
                                       ),
-                                    ),
-                                  ],
-                                ),
-                                SizedBox(height: 16),
-                                _buildActivityRow(
-                                    Icons.check_box,
-                                    'Checked customer satisfaction with purchase',
-                                    'Just now'),
-                                _buildActivityRow(
-                                    Icons.update,
-                                    'Offer #0178348 status changed to Processing, Mini Cooper S not yet picked up',
-                                    'Apr 10, 2024 at 09:30'),
-                                _buildActivityRow(
-                                    Icons.attach_money,
-                                    'Finalized financing details',
-                                    'Apr 5, 2024 at 13:45'),
-                                _buildActivityRow(
-                                    Icons.email,
-                                    'Follow-up email regarding pending offer',
-                                    'Mar 28, 2024 at 15:00'),
-                                _buildActivityRow(
-                                    Icons.swap_horiz,
-                                    'Discussed trade-in options',
-                                    'Mar 25, 2024 at 12:45'),
-                                _buildActivityRow(
-                                    Icons.send,
-                                    'Sent offer details for review',
-                                    'Mar 20, 2024 at 09:15'),
-                                _buildActivityRow(
-                                    Icons.update,
-                                    'Offer #0178348 status changed to Pending, presented Mini Cooper offer',
-                                    'Mar 18, 2024 at 11:00'),
-                              ],
+                                    ],
+                                  ),
+                                  SizedBox(height: 16),
+                                  _buildActivityRow(
+                                      Icons.check_box,
+                                      'Checked customer satisfaction with purchase',
+                                      'Just now'),
+                                  _buildActivityRow(
+                                      Icons.update,
+                                      'Offer #0178348 status changed to Processing, Mini Cooper S not yet picked up',
+                                      'Apr 10, 2024 at 09:30'),
+                                  _buildActivityRow(
+                                      Icons.attach_money,
+                                      'Finalized financing details',
+                                      'Apr 5, 2024 at 13:45'),
+                                  _buildActivityRow(
+                                      Icons.email,
+                                      'Follow-up email regarding pending offer',
+                                      'Mar 28, 2024 at 15:00'),
+                                  _buildActivityRow(
+                                      Icons.swap_horiz,
+                                      'Discussed trade-in options',
+                                      'Mar 25, 2024 at 12:45'),
+                                  _buildActivityRow(
+                                      Icons.send,
+                                      'Sent offer details for review',
+                                      'Mar 20, 2024 at 09:15'),
+                                  _buildActivityRow(
+                                      Icons.update,
+                                      'Offer #0178348 status changed to Pending, presented Mini Cooper offer',
+                                      'Mar 18, 2024 at 11:00'),
+                                ],
+                              ),
                             ),
                           ),
                         ),
