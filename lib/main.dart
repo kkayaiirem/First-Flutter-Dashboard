@@ -248,7 +248,7 @@ class MyApp extends StatelessWidget {
                           backgroundImage: AssetImage('assets/avatar.png'),
                         ),
                         title: Text(
-                          'Esther Howard',
+                          'Irem Kaya',
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
@@ -260,7 +260,7 @@ class MyApp extends StatelessWidget {
                               children: <Widget>[
                                 Icon(Icons.phone, color: Colors.grey[400]),
                                 SizedBox(width: 8.0),
-                                Text('(603) 555-0123'),
+                                Text('(510) 703-5500'),
                               ],
                             ),
                             Container(
@@ -271,7 +271,7 @@ class MyApp extends StatelessWidget {
                                 children: <Widget>[
                                   Icon(Icons.email, color: Colors.grey[400]),
                                   SizedBox(width: 8.0),
-                                  Text('Me.howard@example.com'),
+                                  Text('kkayaiirem@gmail.com'),
                                 ],
                               ),
                             ),
@@ -785,8 +785,8 @@ class _CustomerListState extends State<CustomerList> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        _buildCustomerTile('Jane Cooper', 'J', Colors.grey[800]!, 0),
-        _buildCustomerTile('Esther Howard', 'E', Colors.purple, 1),
+        _buildCustomerTile('Almila Kaya', 'A', Colors.grey[800]!, 0),
+        _buildCustomerTile('Quino Carretero', 'Q', Colors.purple, 1),
         _buildCustomerTile('Leslie Alexander', 'L', Colors.green[400]!, 2),
         _buildCustomerTile('Cameron Williamson', 'C', Colors.orange[400]!, 3),
         _buildCustomerTile('Jenny Wilson', 'J', Colors.blue[400]!, 4),
